@@ -2,7 +2,7 @@ import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
+import { fadeIn } from "../config/variants";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
@@ -19,18 +19,16 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Hi! I'm Arpit Agrawal
+            Hi! I am
             <br />
             <span className="text-accent font-light">
               <TypeAnimation
                 sequence={[
-                  "I am a Frontend Developer",
+                  "Arpit Agrawal.",
                   1000,
-                  "I am a Backend Developer",
+                  "Full Stack Developer.",
                   1000,
-                  "I am a Web Designer",
-                  1000,
-                  "I am a Software Engineer",
+                  "Software Engineer.",
                   1000,
                 ]}
                 wrapper="span"
@@ -46,12 +44,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius in
-            iusto sunt voluptates temporibus. Eius dicta et expedita blanditiis
-            eveniet quidem dolorem, repudiandae praesentium deserunt, assumenda
-            itaque similique sit cupiditate!
-          </motion.p> */}
+          ></motion.p> */}
           <motion.div
             variants={fadeIn("down", 0.15)}
             initial="hidden"
@@ -65,18 +58,17 @@ const Home = () => {
       </div>
 
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
-       
-        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
+        <div className=" bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
 
         <ParticlesContainer />
-   
+
         <motion.div
           variants={fadeIn("up", 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="flex justify-center items-center w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[4%]"
         >
           <Avatar />
         </motion.div>

@@ -6,8 +6,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Portfolio Practice",
-  description: "NextJS & Tailwind. practice making Portfolio",
+  title: "Portfolio",
+  description: "Portfolio of Arpit Agrawal",
 };
 
 function MyApp({ Component, pageProps }) {
