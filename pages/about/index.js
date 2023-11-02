@@ -147,9 +147,9 @@ const About = () => {
           <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
             <div>
               <div className="flex text-center gap-1">
-                {counterData.map((item, itemIndex) => {
+                {counterData.map((item, index) => {
                   return (
-                    <div className="relative text-center xl:text-left">
+                    <div key={index} className="relative text-center xl:text-left">
                       <div className="text-3xl font-extrabold text-accent">
                         <CountUp start={0} end={item.count} duration={5} /> +
                       </div>

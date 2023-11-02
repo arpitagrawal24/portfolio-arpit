@@ -49,10 +49,15 @@ const handler = async (req, res) => {
     };
 
     try {
-      await transporter.sendMail({
-        ...mailOptions,
-        ...generateEmailContent(req.body),
-        subject: subject,
+      await new Promise((resolve, reject) => {
+        transporter.sendMail(mailOptions, (err, info) => {
+          if (err) {
+            console.error(err);
+            reject(err);
+          } else {
+            resolve(info);
+          }
+        });
       });
 
       res.status(200).json({ msg: "Email sent successfully" });
