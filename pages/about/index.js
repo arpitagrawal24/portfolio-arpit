@@ -50,19 +50,39 @@ const aboutData = [
       // },
     ],
   },
-  // {
-  //   title: "awards",
-  //   info: [
-  //     {
-  //       title: "Webby Awards - Honoree",
-  //       stage: "2000 - 2099",
-  //     },
-  //     {
-  //       title: "Adobe Design Achievement Awards - Finalist",
-  //       stage: "2000 - 2099",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Education",
+    info: [
+      {
+        title:
+          "B.Tech (CSE) - Madan Mohan Malaviya University of Technology, Gorakhpur",
+        stage: "2024",
+      },
+      {
+        title: "12th - St. Dominic's Sr. Sec. School, Mathura",
+        stage: "2019",
+      },
+      {
+        title: "10th - St. Dominic's Sr. Sec. School, Mathura",
+        stage: "2017",
+      },
+    ],
+  },
+  {
+    title: "Certificate",
+    info: [
+      {
+        title: "Full Stack Web Development Bootcamp",
+        stage: "Apr 2023",
+        link: "https://www.udemy.com/certificate/UC-45b5bea2-ce63-485f-96a6-71836303c69d/",
+      },
+      {
+        title: "Problem Solving",
+        stage: "Feb 2023",
+        link: "https://www.hackerrank.com/certificates/0688f7e48e15",
+      },
+    ],
+  },
   // {
   //   title: "experience",
   //   info: [
@@ -80,23 +100,6 @@ const aboutData = [
   //     },
   //   ],
   // },
-  {
-    title: "Education",
-    info: [
-      {
-        title: "B.Tech (CSE) - Madan Mohan Malaviya University of Technology, Gorakhpur",
-        stage: "2024",
-      },
-      {
-        title: "12th - St. Dominic's Sr. Sec. School, Mathura",
-        stage: "2019",
-      },
-      {
-        title: "10th - St. Dominic's Sr. Sec. School, Mathura",
-        stage: "2017",
-      },
-    ],
-  },
 ];
 
 const counterData = [
@@ -149,7 +152,10 @@ const About = () => {
               <div className="flex text-center gap-1">
                 {counterData.map((item, index) => {
                   return (
-                    <div key={index} className="relative text-center xl:text-left">
+                    <div
+                      key={index}
+                      className="relative text-center xl:text-left"
+                    >
                       <div className="text-3xl font-extrabold text-accent">
                         <CountUp start={0} end={item.count} duration={5} /> +
                       </div>

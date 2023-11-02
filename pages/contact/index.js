@@ -30,7 +30,7 @@ const Contact = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Aceept: "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify(formData),
       });
