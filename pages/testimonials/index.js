@@ -1,6 +1,6 @@
 import TestimonialSlider from "../../components/TestimonialSlider";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+import { fadeIn } from "../../config/variants";
 
 const Testimonials = () => {
   return (
